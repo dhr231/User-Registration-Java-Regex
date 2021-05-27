@@ -2,14 +2,19 @@ package com.bridgelabz.assignment;
 import java.util.*;
 public class userRegistration {
     boolean validateFirstName(String firstName){
-        Pattern regex=Pattern.compile(^[A-Z][a-z]{3,});
+        Pattern regex=Pattern.compile("^[A-Z][a-z]{3,}");
         return regex.matcher(firstName).matches;
 
     }
 
-//    boolean validateLastName(String lastName){
-//        Pattern regex=Pattern.
-//    }
+    boolean validateLastName(String lastName){
+        Pattern regex=Pattern.compile("^[A-Z][a-z]{3,}");
+        return regex.matcher(lastName).matches;
+    }
+
+    boolean validateEmail(String email){
+        Pattern regex=Pattern.compiler("[a-z]")
+    }
     public static void main(String[] args) {
     Pattern firstName=Pattern.compile([A-Z])
     }
