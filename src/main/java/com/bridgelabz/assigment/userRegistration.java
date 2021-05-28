@@ -13,8 +13,10 @@ public class userRegistration {
     }
 
     boolean validateEmail(String email){
-        Pattern regex=Pattern.compiler("[a-z]")
+        String regex=" ^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$ "
+        Pattern regex=Pattern.compiler()
     }
+
     public static void main(String[] args) {
     Pattern firstName=Pattern.compile([A-Z])
     }
