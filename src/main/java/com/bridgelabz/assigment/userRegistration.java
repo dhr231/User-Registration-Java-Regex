@@ -13,8 +13,17 @@ public class userRegistration {
     }
 
     boolean validateEmail(String email){
-        String regex=" ^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$ "
-        Pattern regex=Pattern.compiler()
+        String regex=" ^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$ " ;
+        return boolean b=Pattern.compile(regex).matcher(email).matches();
+    }
+
+    boolean validatePhone(String phoneNo){
+        String regex= "//d{2} //d{10}";
+        return b=Pattern.compile(regex).matcher(email).matches();
+    }
+
+    boolean validatePassword(String password){
+
     }
 
     public static void main(String[] args) {
